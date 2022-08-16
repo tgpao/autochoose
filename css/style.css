@@ -1,0 +1,579 @@
+/* Remove outline on the forms and links */
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+p{
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body{
+	margin: 0;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+/*Container
+-------------------------*/
+.container{
+	width: 100%;
+	max-width: 950px;
+	margin: 0 auto;	
+}
+
+/*Button
+-------------------------*/
+.btn{
+	padding: 15px 50px;
+	background-color: #db5c4c;
+	border: 0;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+
+.btn:hover{
+	background-color: #f54a35;
+}
+
+.announcement__btn{
+	padding: 0;
+	border: 0;
+	background-color: #fff;
+}
+
+.reg{
+	margin-bottom: 20px;
+}
+
+/*Header
+-------------------------*/
+.header{	
+	background-color: #cfd9e2;
+}
+
+.header__upper{
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: right;
+}
+
+.header__lower{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #fff;
+}
+
+.bottom__border{
+	border-bottom: 1px solid #f0f2fa;
+}
+
+.header__logo{
+	margin: 10px 0;
+}
+
+.logo{
+	display: flex;
+}
+
+.login__link{
+	color: #000;
+	text-decoration: none;
+	opacity: 0.7;
+	transition: opacity 0.1s linear;	
+}
+
+.login__link:hover{
+	opacity: 1;
+}
+
+.user__icon{
+	height: 35px;
+	margin-right: 10px;
+}
+
+.loggedin__name{
+	margin-right: 30px;
+	color: #000;
+}
+
+.loggedin__name:hover{
+	color: blue;
+}
+
+.logout__icon{
+	height: 35px;
+	margin-right: 10px;
+}
+
+.logout__link{
+	opacity: 0.7;
+	transition: opacity 0.2s linear;
+}
+
+.logout__link:hover{
+	opacity: 1;
+}
+
+/*Search
+-------------------------*/
+.search__inner{
+	display: flex;
+}
+
+.search__form{
+	margin: 20px 0 ;
+	background-color: #1d90d8;
+	border-radius: 5px;
+	padding: 20px;
+	width: 450px;
+}
+
+.search__input{
+	display: flex;
+	justify-content: space-between;
+}
+
+.search__region{
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	width: 220px;
+	align-items: center;
+}
+
+.search__model{
+	margin-bottom: 20px;
+}
+
+.input__field{
+	height: 30px;
+	padding: 5px;
+	border: 0;
+	border-radius: 2px;
+	width: 150px;
+}
+
+.price{
+	width: 70px;
+}
+
+.submit__btn{
+	padding: 5px 0;
+	width: 150px;
+	background-color: #db5c4c;
+	border: 0;
+	border-radius: 3px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 16px;
+}
+
+.submit__btn:hover{
+	background-color: #f54a35;
+}
+
+.price__fields{
+	width: 150px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.search__text{
+	color: #fff;
+}
+
+/*Recent
+-------------------------*/
+.recent__new{
+	font-weight: 700;
+	margin-top: 20px;
+	font-size: 20px;
+}
+
+.recent__inner{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+.recent__item{
+	width: 25%;
+}
+
+.recent__img{
+	height: 160px;
+	width: 230px;
+	position: relative;
+	overflow: hidden;
+}
+
+.img__inner{
+	height: 160px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+	z-index: 1;
+
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.recent__title{
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 15px;
+	color: #000;
+}
+
+.recent__title:hover{
+	color: #1d90d8;
+}
+
+.recent__text{
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+}
+
+.recent__price{
+	font-size: 20px;
+	font-weight: 700;
+	color: #077a26;
+}
+
+.recent__mileage{
+	margin-left: 20px;
+}
+
+/*Login
+-------------------------*/
+.login__error{
+	margin: 20px 0;
+	color: red;
+	font-size: 25px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.login{
+	margin-bottom: 20px;
+}
+
+.login__form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.login__text{
+	font-size: 24px;
+	margin: 30px;
+}
+
+.input__text{
+	margin-bottom: 7px;
+}
+
+.login__input{
+	width: 500px;
+	height: 50px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	border: 1px solid #79838d;
+	border-radius: 3px;
+	font-size: 20px;
+}
+
+.reg__btn{
+	margin-top: 100px;	
+	text-align: center;
+}
+
+.reg__link{
+	color: #0000ee;
+	text-decoration: none;
+}
+
+.reg__link:hover{
+	color: #f54a35;
+}
+
+/*Registration
+-------------------------*/
+.reg__errors{
+	text-align: center;
+	margin: 20px 0;
+	font-size: 20px;
+	color: red;
+	border: 2px solid red;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.reg__site{
+	margin: 20px 0;
+}
+
+.reg__site__text{
+	font-size: 20px;
+}
+
+.reg__site__name{
+	color: blue;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.registration__form{
+	text-align: center;
+	align-items: center;
+}
+
+.registration__text{
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.registration__input{
+	width: 500px;
+	height: 50px;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 0;
+	border: 1px solid #79838d;
+	border-radius: 3px;
+	font-size: 20px;
+}
+
+/*Announcement
+-------------------------*/
+.announcement__inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.announcement__item{
+	margin: 20px 0;
+	display: flex;
+}
+
+.announcement__photo{
+	margin-right: 20px;
+
+	height: 200px;
+	width: 300px;
+	position: relative;
+	overflow: hidden;
+}
+
+.photo__item{
+	height: 200px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+	z-index: 1;
+
+	transform: translate3d(-50%, -50%, 0);
+}
+
+.announcement__title{
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+}
+
+.announcement__title:hover{
+	color: #1d90d8;
+}
+
+.announcement__price{
+	margin: 10px 0;
+	font-weight: 700;
+	font-size: 24px;
+	color: #077a26;
+}
+
+.announcement__data{
+	padding: 10px 0 0 10px;
+	width: 250px;
+	border: 1px solid #48077a;
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.data__text{
+	margin-bottom: 10px;
+	margin-right: 10px;
+}
+
+.announcement__description{
+	margin-top: 20px;
+}
+
+.announcement__filter{
+	width: 200px;
+}
+
+.announcement__filter__title{
+	font-size: 20px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.filter__input{
+	padding: 5px;
+	margin-top: 5px;
+	height: 30px;
+	width: 200px;	
+	border: 1px solid grey;
+	border-radius: 2px;
+}
+
+.input__not__select{
+	padding: 8px;
+}
+
+/*Selected
+-------------------------*/
+.selected__inner{
+	margin-top: 50px;
+}
+
+.selected__item{
+	display: flex;
+}
+
+.selected__photos{
+	height: 400px;
+	width: 600px;
+	position: relative;
+	overflow: hidden;
+}
+
+.selected__img{
+	height: 400px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;	
+	z-index: 1;
+
+	transform: translate3d(-50%, -50%, 0);
+}
+
+/*Profile
+-------------------------*/
+.profile__title{
+	margin: 20px 0;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+/*Footer
+-------------------------*/
+.footer__info{
+	background-color: #cfd9e2;
+}
+
+.footer__inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__contacts{
+	line-height: 1.5;
+	margin: 20px 0;
+}
+
+.footer__consult{
+	text-align: center;
+	margin: 20px 0;
+}
+
+.footer__consult__text{
+	font-size: 20px;
+	margin: 10px 0;
+}
+
+.consult__input{
+	height: 40px;
+	width: 300px;
+	border: 0;
+	border: 1px solid #383d42;
+	border-radius: 3px;
+	font-size: 20px;
+}
+
+.btn__consult{
+	padding: 10px 50px;
+	background-color: #db5c4c;
+	border: 0;
+	border-radius: 5px;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;	
+}
+
+.footer__copyright{
+	background-color: #383d42;
+	text-align: center;
+	padding: 20px 0;
+	color: #fff;
+}
+
+/*Sellcar
+-------------------------*/
+.sellcar__title{
+	margin: 20px 0;
+	font-size: 30px;
+	font-weight: 700;
+}
+
+.sellcar__form{
+	width: 500px;
+}
+
+.sellcar__info{
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+	align-items: center;
+}
+
+.sellcar__info__text{
+	font-size: 20px;
+}
+
+.sellcar__info__input{
+	padding: 5px;
+	border: 0;
+	border: 1px solid #383d42;
+	border-radius: 3px;
+	font-size: 18px;
+	height: 30px;
+}
+
+.sellcar__info__submit{
+	margin-bottom: 20px;
+}
